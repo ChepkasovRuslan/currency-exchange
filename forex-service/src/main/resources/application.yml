@@ -1,0 +1,10 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: forex-service
+  jpa:
+    show-sql: true
+  h2:
+    console:
+      enabled: true
