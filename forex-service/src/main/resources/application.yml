@@ -8,3 +8,7 @@ spring:
   h2:
     console:
       enabled: true
+  datasource:
+    url: jdbc:h2:file:./forex-service/db/${forex-h2-db}
+    username: ${forex-h2-user}
+    password: ${forex-h2-pass}
