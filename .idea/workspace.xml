@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b299cb62-a002-40d8-a1cc-0ecc74beb1a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b299cb62-a002-40d8-a1cc-0ecc74beb1a9" name="Changes" comment="change h2 data to environment">
+      <change afterPath="$PROJECT_DIR$/forex-service/src/main/resources/db/changelog/changeset/create-exchange-value-table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forex-service/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/forex-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/forex-service/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forex-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/forex-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forex-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forex-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forex-service/src/main/java/com/example/forexservice/ExchangeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/forex-service/src/main/java/com/example/forexservice/ExchangeValue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -47,14 +50,29 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/user/IdeaProjects/currency-exchange/forex-service/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "redshift",
+      "h2"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/forex-service/src/main/resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/forex-service/src/main/resources/db" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="open liquid-psql-tcontainters" />
@@ -62,7 +80,10 @@
       <command value="delombok" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ForexServiceApplication">
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="ForexServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <envs>
         <env name="forex-h2-pass" value="1" />
@@ -75,6 +96,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="Spring Boot.ForexServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,11 +114,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693910645212</updated>
-      <workItem from="1693910646567" duration="1525000" />
+      <workItem from="1693910646567" duration="3140000" />
     </task>
+    <task id="LOCAL-00001" summary="change h2 data to environment">
+      <option name="closed" value="true" />
+      <created>1693912432996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693912432996</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="change h2 data to environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="change h2 data to environment" />
   </component>
 </project>
