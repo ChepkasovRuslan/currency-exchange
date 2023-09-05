@@ -4,14 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b299cb62-a002-40d8-a1cc-0ecc74beb1a9" name="Changes" comment="use feign client instead of rest client">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b299cb62-a002-40d8-a1cc-0ecc74beb1a9" name="Changes" comment="add server discovery">
+      <change afterPath="$PROJECT_DIR$/currency-gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/src/main/java/com/example/currencygateway/CurrencyGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/src/test/java/com/example/currencygateway/CurrencyGatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/src/main/java/com/example/serverdiscovery/ServerDiscoveryApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/src/test/java/com/example/serverdiscovery/ServerDiscoveryApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forex-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/forex-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ForexServiceApplication">
+  <component name="RunManager" selected="Spring Boot.CurrencyGatewayApplication">
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -105,6 +117,13 @@
     <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="currency-conversion-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.currencyconversionservice.CurrencyConversionServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="currency-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.currencygateway.CurrencyGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,6 +158,7 @@
     <list>
       <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
+      <item itemvalue="Spring Boot.CurrencyGatewayApplication" />
       <item itemvalue="Spring Boot.ServerDiscoveryApplication" />
       <item itemvalue="Spring Boot.ForexServiceApplication" />
       <item itemvalue="Spring Boot.ForexServiceApplication2" />
@@ -160,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693910645212</updated>
       <workItem from="1693910646567" duration="7760000" />
-      <workItem from="1693918742935" duration="140000" />
+      <workItem from="1693918742935" duration="1055000" />
     </task>
     <task id="LOCAL-00001" summary="change h2 data to environment">
       <option name="closed" value="true" />
@@ -194,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693915590472</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add server discovery">
+      <option name="closed" value="true" />
+      <created>1693919172960</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693919172960</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +244,7 @@
     <MESSAGE value="changes:&#10;1) rename db folder&#10;2) declare implicitly columns names in ExchangeValue entity&#10;3) add liquibase migration" />
     <MESSAGE value="add currency conversion service" />
     <MESSAGE value="use feign client instead of rest client" />
-    <option name="LAST_COMMIT_MESSAGE" value="use feign client instead of rest client" />
+    <MESSAGE value="add server discovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="add server discovery" />
   </component>
 </project>
