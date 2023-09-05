@@ -10,6 +10,7 @@
     <modules>
         <module>forex-service</module>
         <module>currency-conversion-service</module>
+        <module>server-discovery</module>
     </modules>
     <packaging>pom</packaging>
 </project>
