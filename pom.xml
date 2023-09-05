@@ -9,6 +9,7 @@
     <description>currency-exchange</description>
     <modules>
         <module>forex-service</module>
+        <module>currency-conversion-service</module>
     </modules>
     <packaging>pom</packaging>
 </project>
