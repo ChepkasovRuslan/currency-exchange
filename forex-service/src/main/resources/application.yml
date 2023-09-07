@@ -1,5 +1,6 @@
 server:
   port: 8000
+
 spring:
   application:
     name: forex-service
@@ -12,3 +13,8 @@ spring:
     url: jdbc:h2:file:./forex-service/db/${forex-h2-db}
     username: ${forex-h2-user}
     password: ${forex-h2-pass}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761/eureka}

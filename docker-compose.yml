@@ -1,0 +1,78 @@
+version: '3.7'
+
+services:
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./currency-gateway/src/main/resources/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - backend
+      - default
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    networks:
+      - backend
+      - default
+
+  discovery:
+    image: server-discovery:latest
+    ports:
+      - "8761:8761"
+    networks:
+      - backend
+      - default
+    environment:
+      - DISCOVERY_URL=http://discovery:8761/eureka
+
+  forex:
+    depends_on:
+      - discovery
+    image: forex-service:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+      - default
+    environment:
+      - DISCOVERY_URL=http://discovery:8761/eureka
+
+  currency-conversion:
+    depends_on:
+      - discovery
+    image: currency-conversion-service:latest
+    ports:
+      - "8100:8100"
+    networks:
+      - backend
+      - default
+    environment:
+      - DISCOVERY_URL=http://discovery:8761/eureka
+      - FEIGN_URL=http://forex:8000/
+
+  currency-gateway:
+    depends_on:
+      - discovery
+      - forex
+      - currency-conversion
+    image: currency-gateway:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+      - default
+    environment:
+      - DISCOVERY_URL=http://discovery:8761/eureka
+      - CURRENCY_CONVERSION_URL=http://currency-conversion:8100/
+      - FOREX_URL=http://forex:8000/
+
+networks:
+  backend:
+    driver: bridge

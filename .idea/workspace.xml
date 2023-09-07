@@ -4,31 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b299cb62-a002-40d8-a1cc-0ecc74beb1a9" name="Changes" comment="add server discovery">
-      <change afterPath="$PROJECT_DIR$/currency-gateway/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/src/main/java/com/example/currencygateway/CurrencyGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency-gateway/src/test/java/com/example/currencygateway/CurrencyGatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/src/main/java/com/example/serverdiscovery/ServerDiscoveryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server-discovery/src/test/java/com/example/serverdiscovery/ServerDiscoveryApplicationTests.java" afterDir="false" />
+    <list default="true" id="b299cb62-a002-40d8-a1cc-0ecc74beb1a9" name="Changes" comment="add gateway">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-conversion-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currency-gateway/src/main/resources/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forex-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-discovery/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/example/currencyconversionservice/CurrencyExchangeServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/java/com/example/currencyconversionservice/CurrencyExchangeServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-conversion-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currency-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/currency-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forex-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/forex-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-discovery/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server-discovery/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockerExecCommands">
+    <ExecCommand>
+      <option name="command" value="bash" />
+    </ExecCommand>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,39 +57,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/user/IdeaProjects/currency-exchange/forex-service/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "171c40b4d8bcae08bec5bf404be882d9",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/user/IdeaProjects/currency-exchange/server-discovery&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6ef4d81780415cfe305c4c8804234924&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redshift",
-      "h2"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redshift&quot;,
+      &quot;h2&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server-discovery" />
       <recent name="$PROJECT_DIR$/forex-service/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/currency-conversion-service" />
+      <recent name="$PROJECT_DIR$/currency-conversion-service/docker" />
+      <recent name="$PROJECT_DIR$/currency-gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$/forex-service/src/main/resources/db" />
     </key>
   </component>
@@ -98,6 +106,7 @@
       <command value="open liquid-psql-tcontainters" />
       <command value="Delombok" />
       <command value="delombok" />
+      <command value="mvn clean package" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -106,12 +115,23 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="excludedTypes">
+      <set>
+        <option value="HttpClient.HttpRequestRunConfigurationType" />
+      </set>
+    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CurrencyGatewayApplication">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="CurrencyConversionServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -155,19 +175,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="HTTP Request.generated-requests | #6" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
-      <item itemvalue="Spring Boot.CurrencyGatewayApplication" />
       <item itemvalue="Spring Boot.ServerDiscoveryApplication" />
+      <item itemvalue="Spring Boot.CurrencyConversionServiceApplication" />
       <item itemvalue="Spring Boot.ForexServiceApplication" />
       <item itemvalue="Spring Boot.ForexServiceApplication2" />
-      <item itemvalue="Spring Boot.CurrencyConversionServiceApplication" />
+      <item itemvalue="Spring Boot.CurrencyGatewayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #2" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
+        <item itemvalue="HTTP Request.generated-requests | #6" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +226,9 @@
       <option name="presentableId" value="Default" />
       <updated>1693910645212</updated>
       <workItem from="1693910646567" duration="7760000" />
-      <workItem from="1693918742935" duration="1055000" />
+      <workItem from="1693918742935" duration="2688000" />
+      <workItem from="1693983183403" duration="11905000" />
+      <workItem from="1694065689066" duration="15067000" />
     </task>
     <task id="LOCAL-00001" summary="change h2 data to environment">
       <option name="closed" value="true" />
@@ -222,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693919172960</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add gateway">
+      <option name="closed" value="true" />
+      <created>1693920046302</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693920046302</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +301,7 @@
     <MESSAGE value="add currency conversion service" />
     <MESSAGE value="use feign client instead of rest client" />
     <MESSAGE value="add server discovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="add server discovery" />
+    <MESSAGE value="add gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gateway" />
   </component>
 </project>

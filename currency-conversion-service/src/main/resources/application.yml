@@ -1,8 +1,17 @@
 server:
   port: 8100
+
 spring:
   application:
     name: currency-conversion-service
-forex-service:
-  ribbon:
-    listOfServers: localhost:8000, localhost:8001
+  cloud:
+    openfeign:
+      client:
+        config:
+          postClient:
+            url: ${FEIGN_URL:http://localhost:8000/}
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761/eureka}

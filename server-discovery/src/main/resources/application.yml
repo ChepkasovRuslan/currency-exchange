@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: currency-exchange-discovery
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    region: default
+    service-url:
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: true
+  cloud:
+    config:
+      import-check:
+        enabled: false
